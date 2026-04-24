@@ -6,4 +6,5 @@ import (
 
 func main() {
 	basics.SayHello()
+	basics.Variable()
 }

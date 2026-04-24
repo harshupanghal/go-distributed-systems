@@ -21,7 +21,7 @@ import "fmt"
 // in other files, libraries,and packages, no main() needed
 
 func SayHello() {
-	fmt.Println("Hello World")
+	fmt.Println("Hello World, i ran successfully")
 }
 
 // ..... COMMANDS ......
