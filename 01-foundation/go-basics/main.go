@@ -5,6 +5,7 @@ import (
 )
 
 func main() {
-	basics.SayHello()
-	basics.Variable()
+	// basics.SayHello()
+	// basics.Variable()
+	basics.Constants()
 }
