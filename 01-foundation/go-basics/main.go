@@ -1,11 +1,10 @@
 package main
 
-import (
-	"basics/basics"
-)
+import "basics/loops"
 
 func main() {
 	// basics.SayHello()
 	// basics.Variable()
-	basics.Constants()
+	// basics.Constants()
+	loops.Loops()
 }
