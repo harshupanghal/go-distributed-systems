@@ -1,10 +1,11 @@
 package main
 
-import "basics/loops"
+import "basics/conditionals"
 
 func main() {
 	// basics.SayHello()
 	// basics.Variable()
 	// basics.Constants()
-	loops.Loops()
+	// loops.Loops()
+	conditionals.IfElse()
 }
