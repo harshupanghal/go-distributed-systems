@@ -1,0 +1,27 @@
+package collections
+
+import "fmt"
+
+func Arrays() {
+
+	// by default arrays are zero-valued
+	var a [5]int
+	fmt.Println("emp:", a) // 0 0 0 0 0
+
+	// to set value
+	// array[index] = value
+	a[4] = 3
+
+	// to get value
+	// array[index]
+	fmt.Println("value at index 4 : ", a[4])
+
+	// to return lenght of array : use len(array)
+	fmt.Println("lenth of array 'a' : ", len(a))
+
+	// to declare and initialze array in one line
+	b := [5]int{1, 2, 3, 4, 5}
+	fmt.Println("elements of array b: ", b)
+
+	//
+}
