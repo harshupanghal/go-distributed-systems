@@ -7,5 +7,6 @@ func main() {
 	// basics.Variable()
 	// basics.Constants()
 	// loops.Loops()
-	conditionals.IfElse()
+	// conditionals.IfElse()
+	conditionals.Switch()
 }
