@@ -23,5 +23,7 @@ func Arrays() {
 	b := [5]int{1, 2, 3, 4, 5}
 	fmt.Println("elements of array b: ", b)
 
-	//
+	// You can also have the compiler count the number of elements for you with ...
+	b = [...]int{1, 2, 3, 4, 5}
+	fmt.Println("dcl:", b)
 }
