@@ -41,4 +41,15 @@ func Arrays() {
 
 	// fmt package will recognizw it as a pointer to an array and shows the array's contents (&[1 2 3]) rather than a raw memory address.
 
+	// if we try too access an out of bounds index, then program will panic at runtime with an error.
+	// fmt.Println(nums[8]) // panic
+
+	// This behavior is called Bounds Checking,
+	// instead of reading and writing an array's element, it ensures the index is within the valid range, (0 upto le(array)-1). if it's not the program immediately panics insteead of letting you access memory that doesn't belong to array.
+
+	// Prevents memory corruption, like C, it doesn't let access overwrite unrelates memory and cause hard to find bugs
+	// stops execution right away
+
+	// Array are passed by Value, so when passed in function , a copy is made, to pass by refernce, use pointer to array.
+
 }
