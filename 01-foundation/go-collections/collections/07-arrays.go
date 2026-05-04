@@ -52,4 +52,25 @@ func Arrays() {
 
 	// Array are passed by Value, so when passed in function , a copy is made, to pass by refernce, use pointer to array.
 
+	// .....................................
+	// Multi-Dimensional Arrays
+
+	var matrix [2][3]int // 2*3 matrix
+	matrix[0][0] = 1
+	matrix[0][1] = 2
+	matrix[0][2] = 3
+	matrix[1][0] = 4
+	matrix[1][1] = 5
+	matrix[1][2] = 6
+
+	fmt.Println(matrix)
+
+	// limitation of arrays : their size must be known at compile time, once declared the size can't be changed
+
+	// when useful :
+
+	// - fized size data like IP addresses
+	// - low level data structures
+	// - interop with C or system calls
+
 }
