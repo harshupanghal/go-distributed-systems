@@ -4,5 +4,6 @@ import "collections/collections"
 
 func main() {
 
-	collections.Arrays()
+	// collections.Arrays()
+	collections.ArraySlices()
 }
