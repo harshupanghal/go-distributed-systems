@@ -40,4 +40,55 @@ func ArraySlices() {
 	// 1. allocates an array of the given size (either the length you specify or the capacity if you provide both)
 	// 2. creates a slice header (pointer, length, capacity) that points to that array
 	// 3. returns the slice header , ready to use.
+
+	// APPEND
+
+	// slices can grow dynamically
+	// built-in 'append' function that takes an existing slice and one or more new elements and returns a new slice with those elements added.
+
+	fmt.Println("...append ......")
+	s4 := make([]int, 3, 5)
+	fmt.Println(s4)
+	fmt.Println(len(s4))
+	fmt.Println(cap(s4))
+
+	s4 = append(s4, 1)
+	fmt.Println(s4)
+	fmt.Println(len(s4))
+	fmt.Println(cap(s4))
+
+	s4 = append(s4, 2, 3)
+	fmt.Println(s4)
+	fmt.Println(len(s4))
+	fmt.Println(cap(s4))
+
+	// if there is enough capacity, append just write into the existng array. If not Go automatically allocates a new larger array, copies the old elements over and add new values.
+	// this can lead to performance overhead due to need for memory allocation and copying.
+	// it's good practice to preallocate slices with an appropriate capacity when you know the size in advance.
+
+	// SLICING The SLICES
+
+	// we can create a new slice by slicing an existing one.
+	// syntax : slice[low:high]
+	// low -  inclusive ; includes index low, excludes index high
+	// high - exclusive ; result contains elements from low to high-1
+	// if low is omitted -  defaults to 0
+	// if high is omitted - defaults to length of slice
+
+	s5 := []int{1, 2, 3, 4, 5}
+	s6 := s5[1:4] // 2 3 4
+	s7 := s5[:3]  // 1 2 3
+	s8 := s5[2:]  // 3 4 5
+	fmt.Println("......slices........")
+	fmt.Println(s5)
+	fmt.Println(s6)
+	fmt.Println(s7)
+	fmt.Println(s8)
+
+	// if 2 slices share the same underlying array, changes to elements of one slice will be reflected in other. This is because both slices point to the same data in memory.
+
+	s6[1] = 6
+	fmt.Println(s6)
+	fmt.Println(s7)
+
 }
