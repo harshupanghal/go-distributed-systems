@@ -5,5 +5,6 @@ import "collections/collections"
 func main() {
 
 	// collections.Arrays()
-	collections.ArraySlices()
+	// collections.ArraySlices()
+	collections.SlicesAdvanced()
 }
