@@ -6,5 +6,6 @@ func main() {
 
 	// collections.Arrays()
 	// collections.ArraySlices()
-	collections.SlicesAdvanced()
+	// collections.SlicesAdvanced()
+	collections.Maps()
 }
