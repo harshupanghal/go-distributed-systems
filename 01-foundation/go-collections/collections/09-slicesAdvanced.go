@@ -36,6 +36,25 @@ func SlicesAdvanced() {
 
 	// - if the source and destination slices overlap, the behavior is undefined. To avoid this, make sure to copy to a separate slice.
 
+	// Multi-Dimensional Slices
+	matrix := [][]int{
+		{7, 8, 9},
+		{4, 5, 6},
+		{1, 2, 3},
+	}
+
+	fmt.Println(matrix)
+
+	rows := 3
+	cols := 4
+	matrix2 := make([][]int, rows)
+	for i := range matrix2 {
+		matrix2[i] = make([]int, cols)
+	}
+
+	fmt.Println(matrix2)
+
+	//matrix are useful when we need flexible, dynamic grids of data.
 }
 
 func modify(s1 [3]int, s2 []int) {
