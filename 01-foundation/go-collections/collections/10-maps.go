@@ -66,4 +66,14 @@ func Maps() {
 	// Not safe for concurrent writes. If multiple goroutines write to a map at the same time, we will get runtime panuc.
 
 	// use : 1. sync.Mutex   2. sync.RWMutex
+
+	// to return number of key.value pairs from a map,
+	fmt.Println(len(m))
+
+	// to delete/ remove key/value pairs from a map.
+	delete(m, "golang") // delete(map_name, "key")
+
+	// to remove all key/value pairs from a map
+	// clear(map_name)
+
 }
