@@ -1,3 +1,0 @@
-# variadic-functions
-
-TODO
